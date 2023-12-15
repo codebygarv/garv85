@@ -1,0 +1,230 @@
+:root {
+    --p: hsl(213deg 85% 97%);
+    --s: hsl(233deg 36% 38%);
+  }
+  
+  .App-bg {
+    user-select: none;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsl(220, 56%, 94%);
+    height: 100vh;
+  }
+  
+  .App {
+    background: var(--p);
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    box-shadow: 0 0 2em hsl(231deg 62% 94%);
+    gap: 0.5em;
+    width: 350px;
+    z-index: 12;
+  }
+  
+  .App .email,
+  .App .password {
+    background: hsl(0deg 0% 100%);
+    box-shadow: 0 0 2em hsl(231deg 62% 94%);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    border-radius: 20px;
+    color: hsl(0deg 0% 30%);
+    width: 100%;
+  }
+  
+  .App .email input,
+  .App .password input {
+    outline: none;
+    border: none;
+    width: 100%;
+  }
+  
+  .App .email input::placeholder,
+  .App .password input::placeholder {
+    color: hsl(0deg 0% 0%);
+    font-size: 0.9em;
+  }
+  
+  .Login-btn {
+    padding: 1em;
+    background: hsl(233deg 36% 38%);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  button {
+    color: #fff;
+  }
+  
+  .pcolor-1 {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  
+  .span-1 {
+    color: hsl(233deg 36% 38%);
+  }
+  
+  .span-1:hover {
+    cursor: pointer;
+  }
+  
+  .span-2 {
+    color: hsl(233deg 36% 38%);
+    font-size: 15px;
+    margin-top: 3px;
+  }
+  
+  .span-2:hover {
+    cursor: pointer;
+  }
+  
+  .forgot {
+    color: hsl(233deg 36% 38%);
+  }
+  
+  .forgot:hover {
+    cursor: pointer;
+  }
+  
+  .Main-heading {
+    font-size: 33px;
+    font-weight: 600;
+    color: hsl(233deg 36% 38%);
+  }
+  
+  .Second-heading {
+    font-size: 30px;
+    font-weight: 600;
+    color: hsl(233deg 36% 38%);
+  }
+  
+  /* background design  */
+  .bg-circles {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    max-width: 1200px;
+    width: calc(100% - 30px);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .bg-circles div {
+    position: absolute;
+    border-radius: 50%;
+  }
+  
+  .bg-circles .circle-1 {
+    height: 60px;
+    width: 60px;
+    background-color: hsl(233deg 36% 38%);
+    left: 5%;
+    top: 10%;
+    opacity: 0.3;
+    animation: zoomInOut 8s linear infinite;
+  }
+  
+  .bg-circles .circle-2 {
+    height: 80px;
+    width: 80px;
+    background-color: hsl(233deg 36% 38%);
+    left: 32%;
+    top: 38%;
+    opacity: 0.4;
+    animation: bounceTop 5s ease-in-out infinite;
+  }
+  
+  .bg-circles .circle-3 {
+    height: 100px;
+    width: 100px;
+    background-color: hsl(233deg 36% 38%);
+    top: 40%;
+    right: -60px;
+    opacity: 0.6;
+    animation: zoomInOut 8s linear infinite;
+  }
+  
+  .bg-circles .circle-4 {
+    height: 70px;
+    width: 70px;
+    background-color: hsl(233deg 36% 38%);
+    left: 62%;
+    top: 63%;
+    opacity: 0.6;
+    animation: bounceBottom 5s ease-in-out infinite;
+  }
+  
+  /* Animations    */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeout {
+    0% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes zoomInOut {
+    0%,
+    100% {
+      transform: scale(0.5);
+    }
+  
+    50% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes bounceTop {
+    0%,
+    100% {
+      transform: translateY(-50px);
+    }
+  
+    50% {
+      transform: translateY(0px);
+    }
+  }
+  @keyframes bounceBottom {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+  
+    50% {
+      transform: translateY(-50px);
+    }
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

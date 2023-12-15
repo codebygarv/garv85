@@ -1,0 +1,27 @@
+.btnbg{
+    background-color: hsl(233deg 36% 38%);
+    opacity: 0.8;
+    margin-top: 20px;
+}
+
+.bor{
+    border: 2px solid white;
+}
+
+.input-1,.input-2,.input-3{
+    background: hsl(0deg 0% 100%);
+    box-shadow: 0 0 2em hsl(231deg 62% 94%);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    border-radius: 20px;
+    color: hsl(0deg 0% 30%);
+    width: 100%;
+}
+
+textarea{
+    width: 100%; /* Take up 100% of the container width */
+    height: 100%; /* Take up 100% of the container height */
+    box-sizing: border-box;
+}
